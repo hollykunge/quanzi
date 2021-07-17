@@ -34,7 +34,7 @@ function ListingsScreen({ navigation }) {
           renderItem={({ item }) => (
             <Card
               title={item.title}
-              subTitle={"$" + item.price}
+              subTitle={"人数: " + item.price}
               imageUrl={item.images[0].url}
               onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
               thumbnailUrl={item.images[0].thumbnailUrl}
@@ -45,7 +45,7 @@ function ListingsScreen({ navigation }) {
     </>
   );
 }
-console.log(imageUrl);
+
 const styles = StyleSheet.create({
   screen: {
     padding: 20,

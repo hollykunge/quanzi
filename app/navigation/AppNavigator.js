@@ -1,6 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 import AccountNavigator from "./AccountNavigator";
 import FeedNavigator from "./FeedNavigator";
@@ -24,7 +24,7 @@ const AppNavigator = () => {
         component={FeedNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="circle" color={color} size={size} />
+            <AntDesign name="message1" color={color} size={size} />
           ),
         }}
       />
@@ -33,7 +33,7 @@ const AppNavigator = () => {
         component={FriendNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="circle" color={color} size={size} />
+            <AntDesign name="team" color={color} size={size} />
           ),
         }}
       />
@@ -42,7 +42,7 @@ const AppNavigator = () => {
         component={DiscoverNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="circle" color={color} size={size} />
+            <AntDesign name="find" color={color} size={size} />
           ),
         }}
       />
@@ -69,7 +69,7 @@ const AppNavigator = () => {
         component={AccountNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
+            <AntDesign name="user" color={color} size={size} />
           ),
         }}
       />
